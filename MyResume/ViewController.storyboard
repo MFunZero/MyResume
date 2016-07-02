@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ssb-9q-GGz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lcM-we-usD">
+            <objects>
+                <viewController id="Ssb-9q-GGz" customClass="ViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lkY-7a-JiW"/>
+                        <viewControllerLayoutGuide type="bottom" id="kBM-Se-fRI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nEm-uO-LM3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="7sZ-GW-2mi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.67843137254901964" green="0.38039215686274508" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7sZ-GW-2mi" firstAttribute="leading" secondItem="nEm-uO-LM3" secondAttribute="leading" id="Ezh-Gd-Qtd"/>
+                            <constraint firstItem="7sZ-GW-2mi" firstAttribute="top" secondItem="nEm-uO-LM3" secondAttribute="top" id="MiC-IZ-Uor"/>
+                            <constraint firstAttribute="trailing" secondItem="7sZ-GW-2mi" secondAttribute="trailing" id="kVz-Xd-MzC"/>
+                            <constraint firstAttribute="bottom" secondItem="7sZ-GW-2mi" secondAttribute="bottom" id="xou-DN-Nbt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="7sZ-GW-2mi" id="Sym-Ly-0eN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zrx-sX-cVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="640" height="1136"/>
+    </resources>
+</document>

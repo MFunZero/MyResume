@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Start View Controller-->
+        <scene sceneID="Dah-WL-2mu">
+            <objects>
+                <viewController storyboardIdentifier="LaunchStartViewController" id="VwF-59-0Ap" customClass="LaunchStartViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aV1-Sf-kDA"/>
+                        <viewControllerLayoutGuide type="bottom" id="VXF-sc-e5O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="seq-9L-8aJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rol-Oa-tI3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jb-4Z-iTb">
+                                <rect key="frame" x="83" y="318" width="248" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GkT-sp-QGl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Jb-4Z-iTb" firstAttribute="centerY" secondItem="seq-9L-8aJ" secondAttribute="centerY" id="5R6-CX-4GL"/>
+                            <constraint firstItem="Rol-Oa-tI3" firstAttribute="height" secondItem="seq-9L-8aJ" secondAttribute="height" id="Dh5-Co-35g"/>
+                            <constraint firstItem="5Jb-4Z-iTb" firstAttribute="centerX" secondItem="seq-9L-8aJ" secondAttribute="centerX" id="M8r-hb-FQO"/>
+                            <constraint firstItem="Rol-Oa-tI3" firstAttribute="top" secondItem="seq-9L-8aJ" secondAttribute="top" id="Ufm-mO-L8N"/>
+                            <constraint firstItem="5Jb-4Z-iTb" firstAttribute="width" secondItem="Rol-Oa-tI3" secondAttribute="width" multiplier="0.6" id="b0W-FR-Y6h"/>
+                            <constraint firstItem="Rol-Oa-tI3" firstAttribute="width" secondItem="seq-9L-8aJ" secondAttribute="width" id="gff-q5-mGf"/>
+                            <constraint firstItem="Rol-Oa-tI3" firstAttribute="leading" secondItem="seq-9L-8aJ" secondAttribute="leading" id="jkF-Zl-blY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bgImageView" destination="Rol-Oa-tI3" id="NSk-6p-Z5y"/>
+                        <outlet property="subjectLabel" destination="5Jb-4Z-iTb" id="u6r-ZU-fil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4A-dL-OE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="640" height="1136"/>
+    </resources>
+</document>
